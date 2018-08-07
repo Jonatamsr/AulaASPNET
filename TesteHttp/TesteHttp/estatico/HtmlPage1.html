@@ -2,23 +2,64 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
     <title>HTML Exemplo 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../Content/Site.css" />
 </head>
 <body>
-    <p>Este é o corpo da página</p>
-    <p>Texto que foi inserido</p>
-    <dl>
-        <dt>Nome</dt>
-        <dd>Jonatam Rocha</dd>
-        <dt>Matrícula</dt>
-        <dd>1523554</dd>
-        <dt>Nome</dt>
-        <dd>Jeanilce Sousa</dd>
-        <dt>Matrícula</dt>
-        <dd>5541523</dd>
-    </dl>
-    <a href="HtmlPage2.html">Ir para segunda página</a>
-    <br/>
-    <a href="www.up.edu.br">site da UP</a>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Disciplina ASP.NET</h1>
+            <p>
+                Atualmente a Internet é a principal forma de chegar nas pessoas. Na disciplina
+                <a href="https://up.blackboard.com/" target="_blank">Programação Web com ASP.NET</a>
+                vamos aprender o essencial para construir aplicações web.
+            </p>
+            <p>
+                <a href="https://up.blackboard.com/" target="_blank" class="btn btn-success btn-lg">
+                    Ir para o curso
+                </a>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Arquitetura Web</h2>
+                <p>Aplicações web são um tipo de aplicação Cliente/Servidor que utiliza tecnologias específicas. Entenda como funciona uma aplicação Web e seu protocolo. </p>
+                <p><a href="https://www.tutorialspoint.com/http/" target="_blank" class="btn btn-success">Entrar &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>HTML, CSS e javascript</h2>
+                <p>Para fazer aplicações Web com ASP.NET é necessário ter uma compreenção básica de HTML, CSS e Javascript. Nesta seção também veremos um pouco de Bootstrap.</p>
+                <p><a href="http://www.htmldog.com/guides/" target="_blank" class="btn btn-success">Entrar &raquo;</a> <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Bootstrap &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Entity Framework</h2>
+                <p>Vamos ver como realizar o acesso a dados com <mark>Entity framework</mark> usando uma base de dados pré-existente definida por um Analista de Dados.</p>
+                <p><a href="http://www.entityframeworktutorial.net/" target="_blank" class="btn btn-success">Entrar &raquo;</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>MVC</h2>
+                <p>ASP.NET MVC é um <mark>framework</mark> que utiliza os conceitos de desenvolvimento mais aceitos para aplicações Web. É mais flexível que Web Forms mas não possui as ferramentas RAD.</p>
+                <p><a href="https://ticursos.000webhostapp.com/cursos/aspnet-3a-etapa/lessons/mvc/" target="_blank" class="btn btn-success">Entrar &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>WebAPI</h2>
+                <p>ASP.NET WebAPI é um <mark>framework</mark> semelhante ao ASP.NET MVC adicionando a este 2 conceitos importantes: RPC e aplicação distribuída.</p>
+                <p><a href="http://www.tutorialsteacher.com/mvc/asp.net-mvc-tutorials" target="_blank" class="btn btn-success">Entrar &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Aluno(s)</h2>
+                <p>Jonatam Rocha (1523554), Jeanilce Sousa (5415233)</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

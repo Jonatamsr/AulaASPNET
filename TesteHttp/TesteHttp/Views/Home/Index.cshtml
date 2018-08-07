@@ -4,11 +4,21 @@
 
 <div class="row">
     <hr />
+    <form method="post">
+        <input type="text" name="nome1" placeholder="nome" /><br />
+        <input type="text" name="matricula1" placeholder="matricula" /><br />
+        <hr />
+        <input type="text" name="nome2" placeholder="nome" /><br />
+        <input type="text" name="matricula2" placeholder="matricula" /><br />
+        <button>Enviar por POST</button>
+    </form>
+    <hr />
+    <hr />
     @Html.ActionLink("Enviar por GET", "Index", new { matricula1 = "1523554", nome1 = "Jonatam Rocha",
             matricula2 = "15932853", nome2 = "Jeanilce Sousa1"})
     <hr />
     <ul>
-        <li>@Request.QueryString["matricula1"]: @Request.QueryString["nome1"]</li>
-        <li>@Request.QueryString["matricula2"]: @Request.QueryString["nome2"]</li>
+        <li>@Request["matricula1"]: @Request["nome1"]</li>
+        <li>@Request["matricula2"]: @Request["nome2"]</li>
     </ul>
 </div>
